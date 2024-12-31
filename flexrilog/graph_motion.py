@@ -26,10 +26,30 @@ Classes
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from sage.all import deepcopy, Set, Graph, find_root, ceil#, sqrt, matrix, copy
-from sage.all import SageObject,  parent, Subsets #, rainbow, latex, flatten
-from sage.all import vector, matrix, sin, cos, pi,  var,  RR,  floor,  tan, log
-from sage.all import FunctionField, QQ,  sqrt,  function, mod, PermutationGroup
+from copy import deepcopy
+from sage.sets.set import Set
+from sage.graphs.graph import Graph
+from sage.numerical.optimize import find_root
+from sage.functions.other import ceil as ceil#
+from sage.structure.sage_object import SageObject
+from sage.structure.element import parent
+from sage.combinat.subset import Subsets as Subsets #
+from sage.modules.free_module_element import free_module_element as vector
+from sage.matrix.constructor import Matrix as matrix
+from sage.functions.trig import sin
+from sage.functions.trig import cos
+from sage.symbolic.constants import pi
+from sage.calculus.var import var
+from sage.rings.real_mpfr import RR
+from sage.functions.other import floor
+from sage.functions.trig import tan
+from sage.misc.functional import log
+from sage.rings.function_field.constructor import FunctionField
+from sage.rings.rational_field import Q as QQ
+from sage.misc.functional import sqrt
+from sage.calculus.var import function
+from sage.misc.functional import log as mod
+from sage.groups.perm_gps.permgroup import PermutationGroup
 from sage.misc.rest_index_of_methods import gen_rest_table_index
 from sage.rings.integer import Integer
 _sage_const_3 = Integer(3); _sage_const_2 = Integer(2); _sage_const_1 = Integer(1);

@@ -36,13 +36,24 @@ TODO:
 #You should have received a copy of the GNU General Public License
 
 from sage.rings.integer import Integer
-from sage.all import cos, sin
+from sage.functions.trig import cos
+from sage.functions.trig import sin
 from .flexible_rigid_graph import FlexRiGraph
 from .symmetric_flexible_rigid_graph import CnSymmetricFlexRiGraph
 from sage.misc.rest_index_of_methods import gen_rest_table_index
-from sage.all import flatten, Set,  Graph, PermutationGroup
-from sage.all import graphs, infinity
-from sage.all import RR, vector, sqrt, I, pi, exp, norm
+from sage.misc.flatten import flatten
+from sage.sets.set import Set
+from sage.graphs.graph import Graph
+from sage.groups.perm_gps.permgroup import PermutationGroup
+from sage.graphs.graph_generators import graphs
+from sage.rings.infinity import Infinity as infinity
+from sage.rings.real_mpfr import RR
+from sage.modules.free_module_element import free_module_element as vector
+from sage.misc.functional import sqrt
+from sage.rings.imaginary_unit import I
+from sage.symbolic.constants import pi
+from sage.functions.log import exp
+from sage.misc.functional import norm
 
 
 import matplotlib.pyplot as plt

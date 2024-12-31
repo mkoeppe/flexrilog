@@ -37,12 +37,15 @@ NACcoloring
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from sage.all import Graph, Set#, show
-from sage.all import SageObject, latex, flatten
+from sage.graphs.graph import Graph
+from sage.sets.set import Set
+from sage.structure.sage_object import SageObject
+from sage.misc.latex import latex
+from sage.misc.flatten import flatten
 from sage.misc.rest_index_of_methods import gen_rest_table_index
 from sage.misc.latex import latex_variable_name
-from sage.all import PermutationGroup
-from sage.all import copy
+from sage.groups.perm_gps.permgroup import PermutationGroup
+from copy import copy
 
 
 class NACcoloring(SageObject):

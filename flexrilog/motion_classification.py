@@ -34,9 +34,20 @@ from sage.misc.rest_index_of_methods import doc_index, gen_thematic_rest_table_i
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from sage.all import Graph, Set, Subsets, deepcopy#,, find_root ceil, sqrt, matrix, copy,
-from sage.all import SageObject, PolynomialRing, QQ, flatten, ideal, sgn
-from sage.all import table, show, factor, latex
+from sage.graphs.graph import Graph
+from sage.sets.set import Set
+from sage.combinat.subset import Subsets
+from copy import deepcopy as deepcopy#
+from sage.structure.sage_object import SageObject
+from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing
+from sage.rings.rational_field import Q as QQ
+from sage.misc.flatten import flatten
+from sage.rings.ideal import Ideal as ideal
+from sage.functions.generalized import sgn
+from sage.misc.table import table
+from sage.repl.rich_output.pretty_print import show
+from sage.arith.misc import factor
+from sage.misc.latex import latex
 #from sage.all import vector, matrix, sin, cos, pi,  var,  RR,  floor,  tan
 #from sage.all import FunctionField, QQ,  sqrt,  function
 from sage.misc.rest_index_of_methods import gen_rest_table_index

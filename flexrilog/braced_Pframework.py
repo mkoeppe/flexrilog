@@ -38,11 +38,30 @@ AUTHORS:
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #from sage.all_cmdline import *   # import sage library
-from sage.all import Graph, Set, ceil, sqrt, matrix, deepcopy, copy
-from sage.all import Subsets, rainbow, show, binomial, RealField, flatten
-from sage.all import var, solve, RR, vector, norm, CC
-from sage.all import PermutationGroup, PermutationGroup_generic
-from sage.all import pi, cos, sin
+from sage.graphs.graph import Graph
+from sage.sets.set import Set
+from sage.functions.other import ceil
+from sage.misc.functional import sqrt
+from sage.matrix.constructor import Matrix as matrix
+from copy import deepcopy
+from copy import copy
+from sage.combinat.subset import Subsets
+from sage.plot.colors import rainbow
+from sage.repl.rich_output.pretty_print import show
+from sage.functions.other import binomial
+from sage.rings.real_mpfr import RealField
+from sage.misc.flatten import flatten
+from sage.calculus.var import var
+from sage.symbolic.relation import solve
+from sage.rings.real_mpfr import RR
+from sage.modules.free_module_element import free_module_element as vector
+from sage.misc.functional import norm
+from sage.rings.cc import CC
+from sage.groups.perm_gps.permgroup import PermutationGroup
+from sage.groups.perm_gps.permgroup import PermutationGroup_generic
+from sage.symbolic.constants import pi
+from sage.functions.trig import cos
+from sage.functions.trig import sin
 import random
 from itertools import chain
 
